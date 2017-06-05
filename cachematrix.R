@@ -1,14 +1,22 @@
+## Put comments here that give an overall description of what your
+## functions do
+
+## Write a short comment describing this function
+
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
     set <- function(y) {
         x <<- y
-        m <<- NULL
+        i <<- NULL
     }
     get <- function() x
     setInverse <- function(inv) i <<- inv
     getInverse <- function() i
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
+
+
+## Write a short comment describing this function
 
 cacheSolve<- function(x, ...) {
     i <- x$getInverse()
