@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Implement two functions:
 
-## Write a short comment describing this function
+## We make a list for cache matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
@@ -14,9 +13,9 @@ makeCacheMatrix <- function(x = matrix()) {
     getInverse <- function() i
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
+makeCacheMatrix()
 
-
-## Write a short comment describing this function
+## Return inverse of x matrix
 
 cacheSolve<- function(x, ...) {
     i <- x$getInverse()
